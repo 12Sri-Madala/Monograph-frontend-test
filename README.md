@@ -1,29 +1,13 @@
-This take-home test was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Getting started
-- Clone the repo: `git clone git@github.com:monographhq/test-frontend.git`
-- Install dependencies: `yarn`
+- Clone the repo
+- Install dependencies: `yarn install`
 - Make sure the app runs: `yarn start`
-
-## Frontend Test
-
-### Dining review app
 
 Design Reference: [Figma File](https://www.figma.com/file/jjqRhIa54hOakjjAWkpbmC/Take-home-frontend-test?node-id=0%3A1)
 
-![Dining App](/app.png)
+## My Design
+How to express human emotion after dining at a restaurant?
 
-1. **Dynamic inputs** - The Preview section on the right has static placeholder text. Wire up the app so that anything typed in both the feedback and party inputs updates the preview on the right.
-2. **Refactor inputs** - Depending on how you wrote the first step, you may need to refactor the update method to only use a single method (instead of two) for updating each input. Make sure you're only passing a single method to both inputs. For example:
-    ```
-    update() {}
-    <input onChange={update}>
-    <input onChange={update}>
-    ```
-3. **Product decision** - We're a small team at Monograph so you may be asked to make recommendations based on a feature we're building. Code from scratch, modify a library, or use a best practice idea is often a decision we're confronted with. You'll be adding an emoji selector to the form on the left. In the [Figma File](https://www.figma.com/file/jjqRhIa54hOakjjAWkpbmC/Take-home-frontend-test?node-id=0%3A1) we've added a few ideas, but we'd like to see your thinking around the best way to implement a feature which allows a user to express their emotions after dining somewhere.
+With the increasing usage of emojis (5 billion are sent every day on messenger according to facebook) this has become our main way of conveying emotion behind plain old text. However, I believe that emojis do not capture the entirety of our emotion. Emotions are complex systems based on our culture, language, and context. Using emojis reduces our feelings to predictable strings of data and defaulting to the basic universal reactions of happiness, sadness, fear, disgust, anger, and surprise hampers our ability to develop emotional skills. For these reasons I went with giving users the ability to attach a gif to their review. There are thousands of gifs for every keyword and while they are all created to encapsulate that word what they convey can be vastly different. The visceral reaction we have when we look at some gifs can not be replicated by looking at a similar emoji. I connected with the Giphy API which generates 2 gifs every time the user enters a keyword (default: Tasty). Due to the limitations of the API I am only able to offset the results to generate new gifs but am not able to randomize the results from their database. Doing this was not without its challenges as I ran into a CORS issue. I used an npm package "http-proxy-middleware" to setup a proxy and ran my api call through that. I also used a highly downloaded npm package to generate my emoji selector component. 
 
-    In your README doc, write a few sentences about why you might pick a certain direction.
-
-4. **Add emoji selector** - Now implement your idea in code and render it on the right in the Preview section.
-5. **Style preview card** - Based on the [Figma File](https://www.figma.com/file/jjqRhIa54hOakjjAWkpbmC/Take-home-frontend-test?node-id=0%3A1), add CSS styling to the Preview area. In Figma you can click the "Code" tab in the upper right to get the relevant CSS values for each element you click.
-6. **Responsive styling** - Now that your Preview is looking good, we need to make the app work for mobile users. We'd like the Preview section to be on top in mobile and everything to look similar to the Figma mockup. Don't worry about tablet styling for now, this is just for mobile.
+** Please install dependencies as I added a few **

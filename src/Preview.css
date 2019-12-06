@@ -1,4 +1,72 @@
+.emoji-border {
+	display: flex;
+	position: relative;
+	margin: 0 1rem 0;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 2rem;
+	box-sizing: border-box;
+	border: 0.4rem solid #000;
+}
+
+.preview-emoji-gif {
+	width: 100%;
+	margin: 1rem 0 1rem;
+	display: flex;
+  flex-direction: row;
+}
+
+.gif-content {
+	width: 5rem;
+}
+
+.party-count {
+	margin-right: 0.25rem;
+	color: rgba(0, 0, 0, 0.25);
+}
+
 .preview {
   width: 480px;
   margin-top: 3rem;
+}
+
+.preview-content {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	margin-top: 0.75rem;
+	height: 36%;
+	overflow-y: auto;
+	background: #FFFFFF;
+	box-shadow: 0px 30px 80px rgba(134, 158, 174, 0.15);
+}
+
+.preview-emoji {
+	margin: auto;
+	margin-top: 0.45rem;
+	font-size: 2rem;
+}
+
+.preview-feedback {
+	display: flex;
+	position: relative;
+	margin: 0 1rem 0;
+	height: 100%;
+	overflow-y: auto;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: rgba(0, 0, 0, 0.25);
+}
+
+.preview-gif-image {
+	max-width: 100%;
+}
+
+.preview-party {
+	display: flex;
+	position: relative;
+	margin: 1rem;
 }
