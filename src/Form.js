@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PropTypes } from 'prop-types';
+
+// Picker is an npm installed component from: https://www.npmjs.com/package/emoji-picker-react
 import Picker from 'emoji-picker-react';
 import './Form.css';
 
